@@ -8,6 +8,29 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
 
+    public static ExecutorService executor = null;
+
+    public static void recursive(String current, String folder_to) {
+        new File(folder_to).mkdirs();
+
+        File[] files = new File(current).listFiles();
+        assert files != null;
+
+        for (File file : files) {
+            if (file.isFile() && file.getName().endsWith("txt")) {
+                System.out.printf("Added task %s\\%s -> %s\\%s\n", current, file.getName(), folder_to, file.getName());
+                executor.execute(new FileProcess(current, folder_to, file.getName()));
+            }
+        }
+
+        for (File file : files) {
+            if (!file.isFile())
+                recursive(new File(current, file.getName()).getPath(),
+                          new File(folder_to, file.getName()).getPath());
+        }
+
+    }
+
     public static void main(String[] args) throws InterruptedException {
 
         Scanner scanner = new Scanner(System.in);
@@ -44,17 +67,11 @@ public class Main {
             System.out.println("Try again!");
         }
 
-        ExecutorService executor = Executors.newFixedThreadPool(threads_count);
+        executor = Executors.newFixedThreadPool(threads_count);
 
         new File(folder_to).mkdirs();
 
-        File[] files = new File(folder_from).listFiles();
-        assert files != null;
-        for (File file : files) {
-            if (file.isFile() && file.getName().endsWith("txt")) {
-                executor.execute(new FileProcess(folder_from, folder_to, file.getName()));
-            }
-        }
+        recursive(folder_from, folder_to);
 
         executor.shutdown();
 
@@ -62,6 +79,6 @@ public class Main {
             executor.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
         } catch (InterruptedException ignored) {}
 
-        System.out.println("Executor terminated.");
+        System.out.println("\nExecutor terminated.");
     }
 }

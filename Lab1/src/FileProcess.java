@@ -14,7 +14,7 @@ public class FileProcess implements Runnable {
 
     private void do_process() throws IOException, InterruptedException {
 
-        System.out.printf("Thread '%s' (%s) started.\n", Thread.currentThread().getName(), filename);
+        System.out.printf(" Thread '%s' (%s) started.\n", Thread.currentThread().getName(), filename);
 
         BufferedReader reader = new BufferedReader(new FileReader(file_from));
 
@@ -25,12 +25,12 @@ public class FileProcess implements Runnable {
         }
         reader.close();
 
-        System.out.printf("Thread '%s' (%s) read file.\n", Thread.currentThread().getName(), filename);
+        System.out.printf("  Thread '%s' (%s) read file.\n", Thread.currentThread().getName(), filename);
 
         Collections.sort(str);
         Thread.sleep(1000);
 
-        System.out.printf("Thread '%s' (%s) sorted lines.\n", Thread.currentThread().getName(), filename);
+        System.out.printf("   Thread '%s' (%s) sorted lines.\n", Thread.currentThread().getName(), filename);
 
         FileWriter writer = new FileWriter(file_to);
         for(String s: str){
@@ -39,7 +39,7 @@ public class FileProcess implements Runnable {
         }
         writer.close();
 
-        System.out.printf("Thread '%s' (%s) finished.\n", Thread.currentThread().getName(), filename);
+        System.out.printf("    Thread '%s' (%s) finished.\n", Thread.currentThread().getName(), filename);
 
     }
 
@@ -48,7 +48,7 @@ public class FileProcess implements Runnable {
         try {
             do_process();
         } catch (IOException | InterruptedException e) {
-            System.out.printf("Thread '%s' got exception (%s).\n", Thread.currentThread().getName(), filename);
+            System.out.printf("---- Thread '%s' got exception (%s).\n", Thread.currentThread().getName(), filename);
         }
     }
 }
