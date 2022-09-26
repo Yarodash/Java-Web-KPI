@@ -1,0 +1,8 @@
+ABCA
+ABCC
+ABCD
+ABCDEFGH
+ABCE
+ABCF
+abcd
+abcdefgh
