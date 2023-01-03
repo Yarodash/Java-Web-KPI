@@ -1,0 +1,16 @@
+2023-01-03T06:49:58.795162600 INFO: User Yarodash login.
+2023-01-03T22:40:56.992133300 INFO: User Yarodash login.
+2023-01-03T22:41:10.530730900 INFO: User admin login.
+2023-01-03T23:00:43.678823300 INFO: User Yaroslav registered.
+2023-01-03T23:00:50.045927500 INFO: User Yaroslav login.
+2023-01-03T23:01:00.324722600 INFO: User Yaroslav made new order.
+2023-01-03T23:01:14.312989 INFO: User admin login.
+2023-01-03T23:01:34.106834400 INFO: Manager admin accepted request #29.
+2023-01-03T23:01:55.943754500 INFO: User Yaroslav made new order.
+2023-01-03T23:02:00.172635 INFO: User Yaroslav made new order.
+2023-01-03T23:02:03.835077900 INFO: User Yaroslav made new order.
+2023-01-03T23:02:10.111385100 INFO: Manager admin accepted request #32.
+2023-01-03T23:02:25.705076200 INFO: Manager admin declined request #31.
+2023-01-03T23:02:26.999656700 INFO: Manager admin declined request #30.
+2023-01-03T23:05:01.005550800 INFO: Receipt #0 was payed.
+2023-01-03T23:05:01.062399900 INFO: User username registered.

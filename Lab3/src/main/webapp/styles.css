@@ -1,0 +1,224 @@
+body {
+    margin: auto;
+    width: 70%;
+    padding: 30px;
+}
+
+body.div {
+    margin: auto;
+}
+
+a.navbar {
+    color: #3e6d8e;
+    background-color: #e0eaf1;
+    border-bottom: 1px solid #3e6d8e;
+    border-right: 1px solid #7f9fb6;
+    padding: 5px 4px 5px 4px;
+    margin: 5px 0 5px 0;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 2.2;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+a.order_by {
+    color: #ffffff;
+    background-color: #484848;
+    border-bottom: 1px solid #ff0000;
+    border-right: 1px solid #ff0000;
+    padding: 5px 4px 5px 4px;
+    margin: 5px 0 5px 0;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 2.2;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+div.routes_sort,
+div.navbar {
+    margin: auto;
+}
+
+.styled-table-flipped,
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table-flipped tbody td:nth-of-type(1),
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table-flipped td,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table-flipped tbody tr,
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table-flipped tbody tr:nth-of-type(even),
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table-flipped tbody tr:last-of-type,
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+div.profile {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 10px;
+}
+
+div.navbar {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+div.profile h1 {
+    background-image: linear-gradient(to left, indigo, blue, green);
+    -webkit-background-clip: text;
+    color: #00000008;
+}
+
+div.content {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+div.center {
+    width:fit-content;
+    height: auto;
+    margin: 0 auto;
+    padding: 1px;
+    position: relative;
+}
+
+div.error {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 0px;
+    background: #fde9e9;
+    margin-top: 15px;
+}
+
+h1.error {
+    color: #c41a1a;
+}
+
+div.right {
+    width:fit-content;
+}
+
+form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.submit {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: #dca638;
+}
+
+a.route {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 5px 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a.route:hover {
+    background: #4ca1af;
+    transition: 0.2s ease;
+}
+
+input[type=submit].accept {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 5px 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input[type=submit].decline {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #c75252;
+    width: 100%;
+    border: 0;
+    padding: 5px 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input[type=text].comment {
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    width: 150px
+}
+
+div.delivery_request {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 5px 60px;
+    margin-top: 12px;
+}
+
+h3.route_info {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+h3.price {
+    color: #003cff;
+}
+
+h3.status {
+    color: #147900;
+}
